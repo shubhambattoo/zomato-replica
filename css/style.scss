@@ -1,3 +1,72 @@
 @use './reset.scss';
 
 /* Add your css here */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+}
+
+.h-container {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    li:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// components
+.icon-link {
+  display: grid;
+  grid-template-columns: 30px auto;
+  grid-column-gap: 5px;
+  text-decoration: none;
+
+  &__avatar {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    align-self: center;
+    color: #444;
+  }
+
+  &--centered {
+    align-self: center;
+  }
+}
+
+/* Buttons */
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.2s;
+    font-size: 16px;
+
+    // change for the button tag
+    border: none;
+    cursor: pointer;
+  }
+}
