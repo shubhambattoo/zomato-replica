@@ -1,15 +1,31 @@
-@use './reset.scss';
+@import 'reset';
 
 /* Add your css here */
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
+  color: #33373d;
+}
+
+.imagery {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), 
+    url(./../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .h-container {
   display: flex;
   justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  font-size: 15px;
 
   ul {
     list-style-type: none;
@@ -21,6 +37,49 @@ body {
 
     li:not(:last-child) {
       margin-bottom: 5px;
+    }
+  }
+}
+
+.cta {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+
+.banner {
+  padding: 30px 10px;
+
+  &__logo {
+    height: 75px;
+    margin: auto;
+
+    img {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__title-container {
+    line-height: 1.2;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+
+  &__search {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+    * {
+      margin-bottom: 10px;
     }
   }
 }
@@ -43,7 +102,7 @@ body {
   &__text {
     font-weight: bold;
     align-self: center;
-    color: #444;
+    color: #33373d;
   }
 
   &--centered {
@@ -56,17 +115,38 @@ body {
   &,
   &:link,
   &:visited {
-    text-transform: capitalize;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
     position: relative;
     transition: all 0.2s;
     font-size: 16px;
+    color: #fff;
+    font-weight: bold;
 
     // change for the button tag
-    border: none;
+    border: 1px solid transparent;
     cursor: pointer;
+  }
+
+  &:hover {
+    color: #cecece;
+  }
+
+  &--bordered {
+    border-color: #fff !important;
+
+    &:hover {
+      border-color: #cecece !important;
+    }
+  }
+
+  &--red {
+    background-color: #cb202d;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
