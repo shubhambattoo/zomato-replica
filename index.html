@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Zomato</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -68,7 +72,7 @@
           Find the best restaurants, cafés, and bars in Mumbai
         </div>
         <div class="search-restaurant banner__search">
-          <select name="cities" id="cities">
+          <select name="cities" class="form-control" id="cities">
             <option value="mumbai">Mumbai</option>
             <option value="mumbai">Kolkata</option>
             <option value="mumbai">Delhi</option>
@@ -78,6 +82,7 @@
             type="text"
             name="restaurant"
             id="search-rest"
+            class="form-control"
             placeholder="Search for restaurants or cuisines..."
           />
           <button class="btn btn--red" id="search-btn">
@@ -86,5 +91,30 @@
         </div>
       </section>
     </div>
+
+    <section class="wrapper">
+      <div class="widget">
+        <h4>Enter your delivery location</h4>
+        <input
+          type="text"
+          placeholder="Type delivery location here"
+          class="search-del"
+        />
+        <button class="detect-btn">Detect</button>
+        <div class="btn btn--green order-btn">Order Food Online!</div>
+      </div>
+    </section>
+
+    <section class="categories"></section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    ></script>
   </body>
 </html>

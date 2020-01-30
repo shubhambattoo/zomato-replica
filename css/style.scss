@@ -149,4 +149,13 @@ body {
       color: #fff;
     }
   }
+
+  &--green {
+    background-color: #099E44;;
+    color: #fff;
+
+    &:hover {
+      background-color: #018c38;
+    }
+  }
 }

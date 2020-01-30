@@ -226,3 +226,9 @@ body {
   background-color: #cb202d; }
   .btn--red:hover {
     color: #fff; }
+
+.btn--green {
+  background-color: #099E44;
+  color: #fff; }
+  .btn--green:hover {
+    background-color: #018c38; }
