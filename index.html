@@ -5,59 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Zomato</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/zomato_flat_bg_logo.svg"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="imagery">
       <header class="h-container">
-        <a href="#" class="icon-link icon-link--centered">
-          <div class="icon-link__avatar">
-            <img src="./images/get-the-app-plain.svg" alt="order online cart" />
+        <div class="container-fluid">
+          <div class="d-flex justify-content-between">
+            <a href="#" class="icon-link icon-link--centered">
+              <div class="icon-link__avatar">
+                <img
+                  src="./images/get-the-app-plain.svg"
+                  alt="order online cart"
+                />
+              </div>
+              <div class="icon-link__text">
+                Get the app
+              </div>
+            </a>
+            <div>
+              <ul>
+                <li>
+                  <a href="#" id="nav_item_1" class="icon-link">
+                    <div class="icon-link__avatar">
+                      <img
+                        src="./images/order-online.svg"
+                        alt="order online cart"
+                      />
+                    </div>
+                    <div class="icon-link__text">
+                      Order Food
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="nav_item_2" class="icon-link">
+                    <div class="icon-link__avatar">
+                      <img src="./images/book-a-table.svg" alt="book a table" />
+                    </div>
+                    <div class="icon-link__text">
+                      Book a Table
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" id="nav_item_3" class="icon-link">
+                    <div class="icon-link__avatar">
+                      <img src="./images/gold.svg" alt="zomato gold icon" />
+                    </div>
+                    <div class="icon-link__text">
+                      Zomato Gold
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="icon-link__text">
-            Get the app
-          </div>
-        </a>
-        <div>
-          <ul>
-            <li>
-              <a href="#" id="nav_item_1" class="icon-link">
-                <div class="icon-link__avatar">
-                  <img
-                    src="./images/order-online.svg"
-                    alt="order online cart"
-                  />
-                </div>
-                <div class="icon-link__text">
-                  Order Food
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" id="nav_item_2" class="icon-link">
-                <div class="icon-link__avatar">
-                  <img src="./images/book-a-table.svg" alt="book a table" />
-                </div>
-                <div class="icon-link__text">
-                  Book a Table
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" id="nav_item_3" class="icon-link">
-                <div class="icon-link__avatar">
-                  <img src="./images/gold.svg" alt="zomato gold icon" />
-                </div>
-                <div class="icon-link__text">
-                  Zomato Gold
-                </div>
-              </a>
-            </li>
-          </ul>
         </div>
       </header>
       <div class="cta">
@@ -92,29 +101,245 @@
       </section>
     </div>
 
-    <section class="wrapper">
-      <div class="widget">
-        <h4>Enter your delivery location</h4>
-        <input
-          type="text"
-          placeholder="Type delivery location here"
-          class="search-del"
-        />
-        <button class="detect-btn">Detect</button>
-        <div class="btn btn--green order-btn">Order Food Online!</div>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-9 col-lg-9">
+          <section class="wrapper bg-white p-4"></section>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <section class="wrapper bg-white b-light rounded">
+            <div class="widget">
+              <h4 class="wrapper__heading my-3">
+                Enter your delivery location
+              </h4>
+              <div class="widget__input-row">
+                <input
+                  type="text"
+                  placeholder="Type delivery location here"
+                  class="form-control search-del"
+                />
+                <button class="detect-btn">Detect</button>
+              </div>
+              <button class="btn btn--green order-btn w-100 mb-3">
+                Order Food Online!
+              </button>
+            </div>
+            <div class="offer">
+              Use code <span class="font-weight-bold">ZOMATO</span> to get up to
+              50% OFF. T&Cs apply.
+            </div>
+          </section>
+        </div>
       </div>
-    </section>
 
-    <section class="categories"></section>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <section class="wrapper categories px-0">
+            <h2 class="cat-title wrapper__heading-lg mb-2">
+              Quick Searches
+            </h2>
+            <p class="cat-subtitle wrapper__subtitle mb-4">
+              Discover restaurants by type of meal
+            </p>
+            <ul class="category-list">
+              <li class="category">
+                <img
+                  src="./images/delivery.png"
+                  class="category__img"
+                  alt="delivery"
+                />
+                <div class="category__text">Delivery</div>
+              </li>
+              <li class="category">
+                <img
+                  src="./images/pocket-friendly-delivery.png"
+                  class="category__img"
+                  alt="pocket friendly delivery"
+                />
+                <div class="category__text">Pocket-Fiendly Delivery</div>
+              </li>
+              <li class="category">
+                <img
+                  src="./images/breakfast.png"
+                  class="category__img"
+                  alt="breakfast"
+                />
+                <div class="category__text">Breakfast</div>
+              </li>
+              <li class="category">
+                <img
+                  src="./images/lunch.png"
+                  class="category__img"
+                  alt="Lunch"
+                />
+                <div class="category__text">Lunch</div>
+              </li>
+              <li class="category">
+                <img
+                  src="./images/dinner.png"
+                  class="category__img"
+                  alt="Dinner"
+                />
+                <div class="category__text">Dinner</div>
+              </li>
+              <li class="category">
+                <img
+                  src="./images/drinks.png"
+                  class="category__img"
+                  alt="Drinks & Nightlife"
+                />
+                <div class="category__text">Drinks & Nightlife</div>
+              </li>
+              <li class="category">
+                <img
+                  src="./images/cafes.png"
+                  class="category__img"
+                  alt="Cafes"
+                />
+                <div class="category__text">Cafes</div>
+              </li>
+              <li class="category">
+                <img
+                  src="./images/desserts.png"
+                  class="category__img"
+                  alt="Desserts & Bakes"
+                />
+                <div class="category__text">Desserts & Bakes</div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    ></script>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <section class="wrapper localities px-0">
+            <h2 class="wrapper__heading-lg loc-title mb-2">
+              Popular localities in and around Kolkata
+            </h2>
+            <p class="wrapper__subtitle loc-subtitle">
+              Explore restaurants, bars, and cafés by locality
+            </p>
+
+            <ul class="locality-list bg-white rounded">
+              <li class="locality">
+                Park Street Area <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Sector 5, Salt Lake <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Sector 1, Salt Lake <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Ballygunge <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Southern Avenue <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                New Town <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Camac Street Area <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Chinar Park <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Elgin <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Kasba <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Science City Area <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Kankurgachi <span class="locality__meta">(100)</span>
+              </li>
+
+              <li class="locality">
+                Park Street Area <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Sector 5, Salt Lake <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Sector 1, Salt Lake <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Ballygunge <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Southern Avenue <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                New Town <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Camac Street Area <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Chinar Park <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Elgin <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Kasba <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Science City Area <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Kankurgachi <span class="locality__meta">(100)</span>
+              </li>
+
+              <li class="locality">
+                Park Street Area <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Sector 5, Salt Lake <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Sector 1, Salt Lake <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Ballygunge <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Southern Avenue <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                New Town <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Camac Street Area <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Chinar Park <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Elgin <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Kasba <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Science City Area <span class="locality__meta">(100)</span>
+              </li>
+              <li class="locality">
+                Kankurgachi <span class="locality__meta">(100)</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
