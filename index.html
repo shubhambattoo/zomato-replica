@@ -96,7 +96,7 @@
             class="form-control"
             placeholder="Search for restaurants or cuisines..."
           />
-          <button class="btn btn--red" id="search-btn">
+          <button class="btn btn--red search-btn" id="search-btn">
             Search
           </button>
         </div>
@@ -119,8 +119,9 @@
                   type="text"
                   placeholder="Type delivery location here"
                   class="form-control search-del"
+                  id="search-del"
                 />
-                <button class="detect-btn">Detect</button>
+                <button class="detect-btn" id="detect-btn">Detect</button>
               </div>
               <button class="btn btn--green order-btn w-100 mb-3">
                 Order Food Online!
@@ -137,10 +138,10 @@
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
           <section class="wrapper categories px-0">
-            <h2 class="cat-title wrapper__heading-lg mb-2">
+            <h2 class="cat-title wrapper__heading-lg mb-2" id="cat-title">
               Quick Searches
             </h2>
-            <p class="cat-subtitle wrapper__subtitle mb-4">
+            <p class="cat-subtitle wrapper__subtitle mb-4" id="cat-subtitle">
               Discover restaurants by type of meal
             </p>
             <ul class="category-list">
@@ -216,10 +217,10 @@
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
           <section class="wrapper localities px-0">
-            <h2 class="wrapper__heading-lg loc-title mb-2">
+            <h2 class="wrapper__heading-lg loc-title mb-2" id="loc-title">
               Popular localities in and around Kolkata
             </h2>
-            <p class="wrapper__subtitle loc-subtitle">
+            <p class="wrapper__subtitle loc-subtitle" id="loc-subtitle">
               Explore restaurants, bars, and cafés by locality
             </p>
 
