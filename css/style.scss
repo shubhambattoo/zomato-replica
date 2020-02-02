@@ -424,7 +424,7 @@ body {
     }
   }
 
-  &--red {
+  &--red, &.search-btn {
     background-color: #cb202d;
 
     &:hover {

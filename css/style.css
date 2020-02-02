@@ -401,9 +401,9 @@ body {
   .btn--bordered:hover {
     border-color: #cecece !important; }
 
-.btn--red {
+.btn--red, .btn.search-btn {
   background-color: #cb202d; }
-  .btn--red:hover {
+  .btn--red:hover, .btn.search-btn:hover {
     background-color: #ac0513; }
 
 .btn--green {
