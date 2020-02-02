@@ -142,8 +142,6 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   font-size: 15px; }
   .h-container ul {
@@ -154,11 +152,22 @@ body {
     flex-direction: column; }
     .h-container ul li:not(:last-child) {
       margin-bottom: 5px; }
+    @media screen and (min-width: 600px) {
+      .h-container ul {
+        flex-direction: row; }
+        .h-container ul li {
+          font-size: 15px;
+          margin-left: 12px; }
+          .h-container ul li:not(:last-child) {
+            margin-bottom: 0; } }
+  @media screen and (min-width: 600px) {
+    .h-container {
+      padding: 0; } }
 
 .cta {
   display: flex;
   flex-direction: row-reverse;
-  padding: 10px; }
+  padding: 15px 0; }
 
 .banner {
   padding: 30px 10px; }
@@ -185,6 +194,23 @@ body {
     padding: 0 20px; }
     .banner__search * {
       margin-bottom: 10px; }
+  @media screen and (min-width: 600px) {
+    .banner {
+      padding: 60px 15px; }
+      .banner__logo {
+        height: 120px; }
+      .banner__search {
+        flex-direction: row;
+        max-width: 900px;
+        margin: 0 auto; }
+        .banner__search select {
+          flex: 1;
+          margin-right: 10px; }
+        .banner__search input {
+          flex: 5;
+          margin-right: 10px; }
+        .banner__search button {
+          flex: 1; } }
 
 .widget__input-row {
   display: grid;
@@ -220,6 +246,9 @@ body {
   display: flex;
   flex-flow: row wrap;
   align-items: stretch; }
+  @media screen and (min-width: 600px) {
+    .categories .category-list {
+      flex-flow: row nowrap; } }
 
 .locality-list {
   background-color: #fff;
@@ -228,12 +257,52 @@ body {
   margin: 0;
   columns: 1;
   border: 1px solid silver; }
+  @media screen and (min-width: 600px) {
+    .locality-list {
+      columns: 3; } }
+
+.footer {
+  margin-top: 30px;
+  background-color: #33373d;
+  padding: 15px 0;
+  color: #f1f1f1; }
+  .footer h6 {
+    color: #adb0b6;
+    font-size: 17px;
+    margin: 15px 0;
+    font-weight: bolder; }
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 15px; }
+  .footer select {
+    background-color: transparent;
+    color: #f1f1f1; }
+  .footer__logo img {
+    height: 50px; }
+  .footer-wrapper {
+    padding-top: 15px;
+    border-top: 1px solid #3c3f46; }
+  .footer__list {
+    padding: 0;
+    margin: 0 0 30px; }
+    .footer__list__item {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.2; }
+      .footer__list__item:not(:last-child) {
+        margin-bottom: 10px; }
+      .footer__list__item a {
+        color: #cdcdcd;
+        text-decoration: none; }
 
 .icon-link {
   display: grid;
   grid-template-columns: 30px auto;
   grid-column-gap: 5px;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 8px 0; }
   .icon-link__avatar {
     width: 100%; }
     .icon-link__avatar img {
@@ -244,6 +313,17 @@ body {
     color: #33373d; }
   .icon-link--centered {
     align-self: center; }
+  .icon-link:hover {
+    text-decoration: none;
+    background-color: #fff8eb; }
+  @media screen and (min-width: 600px) {
+    .icon-link {
+      grid-column-gap: 0; }
+      .icon-link__avatar img {
+        height: 25px; } }
+  @media screen and (min-width: 900px) {
+    .icon-link {
+      grid-column-gap: 5px; } }
 
 .wrapper {
   margin-top: 20px;
@@ -287,8 +367,16 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.456; }
+  .locality:nth-of-type(11n) {
+    margin-bottom: 40px; }
   .locality__meta {
     color: #89959b; }
+  @media screen and (min-width: 600px) {
+    .locality__meta {
+      display: none; } }
+  @media screen and (min-width: 900px) {
+    .locality__meta {
+      display: inline; } }
 
 /* Buttons */
 .btn, .btn:link, .btn:visited {
@@ -328,4 +416,7 @@ body {
   background-color: #fff !important; }
 
 .b-light {
-  border: 1px solid silver; }
+  border: 1px solid silver !important; }
+
+.bb-dark {
+  border-bottom: 1px solid #3c3f46; }
