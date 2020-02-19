@@ -8,6 +8,6 @@ Zomato Landing page replica created with HTML and SCSS, fully responsive page. C
 1. SCSS
 1. Node-SASS
 
-[Live Preview](https://shubhambattoo.github.io/ark-studio/)
+[Live Preview](https://shubhambattoo.github.io/zomato-replica/)
 
 ![](Zomato.jpg)
