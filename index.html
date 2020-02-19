@@ -106,7 +106,77 @@
     <main class="container">
       <div class="row">
         <div class="col-lg-8 col-md-12 col-sm-12">
-          <section class="wrapper bg-white p-4"></section>
+          <section class="wrapper">
+            <div class="ad">
+              <img src="images/ad-zomaland.jpeg" alt="Zomaland" />
+            </div>
+
+            <section class="collections">
+              <h2 class="wrapper__heading-lg mb-1">Collections</h2>
+
+              <p class="wrapper__subtitle mb-4">
+                Explore curated lists of top restaurants, cafes, pubs, and bars
+                in Kolkata, based on trends
+              </p>
+
+              <ul class="collection-list">
+                <li class="collection">
+                  <div
+                    class="collection-img"
+                    style="background-image: url(images/trending.jpg);"
+                  ></div>
+
+                  <div class="collection-content">
+                    <h4>Trending This Week</h4>
+                    <p>Most popular restaurants in town this week</p>
+                  </div>
+                </li>
+
+                <li class="collection">
+                  <div
+                    class="collection-img"
+                    style="background-image: url(images/mumbai.jpg);"
+                  ></div>
+
+                  <div class="collection-content">
+                    <h4>Best of Mumbai</h4>
+                    <p>
+                      The hunt for the highest-rated restaurants in your city
+                      ends here
+                    </p>
+                  </div>
+                </li>
+
+                <li class="collection">
+                  <div
+                    class="collection-img"
+                    style="background-image: url(images/open.jpg);"
+                  ></div>
+
+                  <div class="collection-content">
+                    <h4>Newly Opened</h4>
+                    <p>The best new places in town</p>
+                  </div>
+                </li>
+
+                <li class="collection">
+                  <div
+                    class="collection-img"
+                    style="background-image: url(images/surecrisp.jpeg);"
+                  ></div>
+
+                  <div class="collection-content">
+                    <h4>SureCrisp Quick Fries</h4>
+                    <p>Turn up the flavour by ordering SureCrisp fries</p>
+                  </div>
+                </li>
+              </ul>
+
+              <button type="button" class="all-collection-btn">
+                All collections in Kolkata
+              </button>
+            </section>
+          </section>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12">
           <section class="wrapper bg-white b-light rounded">
@@ -340,14 +410,27 @@
           </a>
 
           <div class="list">
-            <select name="languages" id="languages" class="form-control">
+            <!-- <select name="languages" id="languages" class="form-control">
               <option value="english">English</option>
               <option value="english">English</option>
               <option value="english">English</option>
               <option value="english">English</option>
               <option value="english">English</option>
               <option value="english">English</option>
-            </select>
+            </select> -->
+
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                English
+              </button>
+            </div>
           </div>
         </div>
         <div class="footer-wrapper">
@@ -491,6 +574,24 @@
             </div>
           </div>
         </div>
+        <p class="copyright">
+          By continuing past this page, you agree to our
+          <a href="http://www.zomato.com/conditions" rel="nofollow"
+            >Terms of Service</a
+          >,
+          <a href="http://www.zomato.com/cookiepolicy" rel="nofollow"
+            >Cookie Policy</a
+          >,
+          <a href="http://www.zomato.com/privacy" rel="nofollow"
+            >Privacy Policy</a
+          >
+          and
+          <a href="http://www.zomato.com/policies" rel="nofollow"
+            >Content Policies</a
+          >. All trademarks are properties of their respective owners. ©
+          2008-2020 - <a href="http://www.zomato.com">Zomato</a>™ Media Pvt Ltd.
+          All rights reserved.
+        </p>
       </div>
     </footer>
 

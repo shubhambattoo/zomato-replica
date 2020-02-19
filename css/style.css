@@ -204,10 +204,11 @@ body {
         max-width: 900px;
         margin: 0 auto; }
         .banner__search select {
-          flex: 1;
+          flex: 3;
+          cursor: pointer;
           margin-right: 10px; }
         .banner__search input {
-          flex: 5;
+          flex: 10;
           margin-right: 10px; }
         .banner__search button {
           flex: 1; } }
@@ -236,7 +237,7 @@ body {
   text-align: center;
   border-top: 1px solid silver;
   padding-top: 15px;
-  padding-bottom: 75px;
+  padding-bottom: 155px;
   line-height: 1.3; }
 
 .categories .category-list {
@@ -249,6 +250,56 @@ body {
   @media screen and (min-width: 600px) {
     .categories .category-list {
       flex-flow: row nowrap; } }
+
+.collection-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .collection-list {
+      flex-flow: column nowrap; } }
+
+.collection {
+  display: flex;
+  width: 49%;
+  border: 1px solid #e7e7e7;
+  border-radius: 0.28571429rem;
+  background: #fff;
+  margin: 6px 0; }
+  @media screen and (max-width: 768px) {
+    .collection {
+      width: 100%; } }
+
+.collection-img {
+  width: 40%;
+  background-position: center center;
+  background-size: cover;
+  height: 120px; }
+
+.collection-content {
+  width: 60%;
+  padding: 8px; }
+  .collection-content h4 {
+    color: #33373d;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px; }
+  .collection-content p {
+    font-size: 14px;
+    color: #33373d;
+    margin-top: 5px; }
+
+.all-collection-btn {
+  width: 100%;
+  position: relative;
+  padding: 1em;
+  margin: 1rem 0 0;
+  background: #fff;
+  border-radius: 0.28571429rem;
+  border: 1px solid silver;
+  color: #cb202d;
+  font-size: 14px;
+  text-align: center; }
 
 .locality-list {
   background-color: #fff;
@@ -276,9 +327,11 @@ body {
     justify-content: space-between;
     align-items: stretch;
     padding-bottom: 15px; }
-  .footer select {
+  .footer select,
+  .footer .dropdown > button {
     background-color: transparent;
-    color: #f1f1f1; }
+    color: #f1f1f1;
+    border: 1px solid silver; }
   .footer__logo img {
     height: 50px; }
   .footer-wrapper {
@@ -296,6 +349,10 @@ body {
       .footer__list__item a {
         color: #cdcdcd;
         text-decoration: none; }
+  .footer .copyright, .footer .copyright a {
+    padding: 16px 0;
+    font-size: 10px;
+    color: #9a9a9a; }
 
 .icon-link {
   display: grid;
